@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style="background-color: lightsalmon;">
+    <head>
+        <title>Calculator</title>
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <div style="position: absolute;top: 20%;left: 35%;">
+            <h2>A Basic Calculator</h2>
+            <div id="display-style"></div>
+            <div style="height: 50px;">
+                <button id = ")" class="button-style" onclick = show(this.innerHTML)>)</button>
+                <button id = "(" class="button-style" onclick = show(this.innerHTML)>(</button>
+                <button id = "B" class="button-style" title="Backspace" onclick = show(this.innerHTML)>B</button>
+                <button id = "C" class="button-style" title="Clear" onclick = show(this.innerHTML)>C</button>
+            </div>
+            <div style="height: 50px;">
+                <button id = "7" class="button-style" onclick = show(this.innerHTML)>7</button>
+                <button id = "8" class="button-style" onclick = show(this.innerHTML)>8</button>
+                <button id = "9" class="button-style" onclick = show(this.innerHTML)>9</button>
+                <button id = "/" class="button-style" onclick = show(this.innerHTML)>/</button>
+            </div>
+            <div style="height: 50px;">
+                <button id = "4" class="button-style" onclick = show(this.innerHTML)>4</button>
+                <button id = "5" class="button-style" onclick = show(this.innerHTML)>5</button>
+                <button id = "6" class="button-style" onclick = show(this.innerHTML)>6</button>
+                <button id = "*" class="button-style" onclick = show(this.innerHTML)>*</button>
+            </div>
+            <div style="height: 50px;">
+                <button id = "1" class="button-style" onclick = show(this.innerHTML)>1</button>
+                <button id = "2" class="button-style" onclick = show(this.innerHTML)>2</button>
+                <button id = "3" class="button-style" onclick = show(this.innerHTML)>3</button>
+                <button id = "-" class="button-style" onclick = show(this.innerHTML)>-</button>
+            </div>
+            <div style="height: 50px;">
+                <button id = "." class="button-style" onclick = show(this.innerHTML)>.</button>
+                <button id = "0"class="button-style" onclick = show(this.innerHTML)>0</button>
+                <button id = "=" class="button-style" style = "background-color: lightgreen;" onclick = equal(this.innerHTML)>=</button>
+                <button id = "+" class="button-style" onclick = show(this.innerHTML)>+</button>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
